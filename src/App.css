@@ -1,12 +1,51 @@
 button {
   background: none;
-  border: none;
+  border: 2px solid white;
   color: white;
   margin-left: 15px;
   margin-right: 15px;
   font-size: 20px;
 }
 
+body {
+  background: linear-gradient(to right, darkblue, deepPink);
+}
+
 .navbar {
   min-height: 80px;
+  background-color: black;
+}
+
+footer {
+  position: fixed;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+#about_card {
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  display: inline-block;
+}
+
+.current_card {
+  text-align: center;
+  margin-right: 45%;
+  margin-top: 5%;
+
+}
+
+.img_container {
+  width: 150px;
+  height: 150px;
+}
+
+.profile_image {
+  height: 100%;
+  width: 100%;
+  
 }
