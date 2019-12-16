@@ -6,13 +6,27 @@ import About from './About.js';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      current_card: 'about'
+    }
+    this.renderItems = this.renderItems.bind(this);
 
   }
-
+  renderItems() {
+    if (this.state.current_card === 'about') {
+      return (
+        <div id="about_container">
+          <div className="img_container">
+            <img className="profile_image" alt="picture_of_me" src={require('./profilbild.jpg')}></img>
+          </div>
+          <About />
+        </div>
+      )
+    }
+  }
 
   render() {
-
+    const items = this.renderItems();
     return (
       <div id="App">
         <header>
@@ -26,7 +40,7 @@ export default class App extends React.Component {
         </header>
         
           <div className="current_card">
-            <About />
+          {items}
           </div>
 
         <footer>

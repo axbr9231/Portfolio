@@ -25,27 +25,37 @@ footer {
 }
 
 #about_card {
-  position: absolute;
+  border-radius: 2%;
   background-color: white;
   width: 800px;
   height: 500px;
   display: inline-block;
 }
 
+#about_container {
+  position: relative;
+}
+
 .current_card {
   text-align: center;
-  margin-right: 45%;
-  margin-top: 5%;
+  margin-top: 7%;
+  max-height: 1000px;
 
 }
 
 .img_container {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 10px;
+  left: 400px;
+  
+
 }
 
 .profile_image {
   height: 100%;
   width: 100%;
+  border-radius: 50%;
   
 }
