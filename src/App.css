@@ -7,8 +7,19 @@ button {
   font-size: 20px;
 }
 
+button:hover {
+  opacity: .5;
+}
+
 body {
-  background: linear-gradient(to right, darkblue, deepPink);
+  /* background: linear-gradient(to right, darkblue, deepPink); */
+  background-image: url(northern_lights2.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  height:100%;
+  width:100%;
 }
 
 .navbar {
@@ -49,13 +60,21 @@ footer {
   position: absolute;
   top: 10px;
   left: 400px;
-  
-
 }
 
 .profile_image {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  
+}
+
+#myName {
+  /* margin-top: 15%; */
+  font-family: 'Exo 2', sans-serif;
+  color: aliceblue;
+  margin-bottom: 30px;
+}
+
+.moosePic {
+  /* padding-bottom: 80px; */
 }
