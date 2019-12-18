@@ -37,29 +37,34 @@ footer {
 
 #about_card {
   border-radius: 2%;
-  background-color: white;
-  width: 800px;
-  height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 600px;
+  height: 700px;
   display: inline-block;
+  text-align: center;
 }
 
-#about_container {
+.myInfo {
+  background-color: none;
+  display: inline-block;
   position: relative;
+  width: 90%;
+  height: 500px;
+  border-radius: 2%;
+  color: white;
 }
 
 .current_card {
   text-align: center;
-  margin-top: 7%;
+  margin-top: 2%;
   max-height: 1000px;
-
 }
 
 .img_container {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  top: 10px;
-  left: 400px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding-bottom: 20px;
 }
 
 .profile_image {

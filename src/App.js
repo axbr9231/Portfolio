@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import About from './About.js';
-import $ from 'jquery';
 
 
 export default class App extends React.Component {
@@ -16,20 +15,17 @@ export default class App extends React.Component {
   renderItems() {
     if (this.state.current_card === 'about') {
       return (
-        <div id="about_container">
-          <div className="img_container">
-            <img className="profile_image" alt="picture_of_me" src={require('./profilbild.jpg')}></img>
-          </div>
+        <div>
           <About />
         </div>
       )
     } else if (this.state.current_card === 'home') {
       return (
-        <div class="animated fadeInUp">
-          <h1 id="myName" class="animated fadeInUp">
+        <div>
+          <h1 id="myName" class="animated fadeInDownBig slower">
           Axel Brostedt | Software Engineer
           </h1>
-          <img src={require('./moose.png')} alt="Icon made by Freepik" class="moosePic"></img>
+          <img src={require('./moose.png')} alt="Icon made by Freepik" class="moosePic animated fadeInUp slower"></img>
         </div>
       )
     }
@@ -55,7 +51,7 @@ export default class App extends React.Component {
           </nav>
         </header>
         
-          <div className="current_card">
+          <div class="current_card">
           {items}
           </div>
 
