@@ -14,8 +14,8 @@ const About = (props) => {
                 <br></br>
                 <p>I enjoy working with other people on a team and only feel content once I have brought something useful or meaningful to the table. Helping other people solve their problems is something I take great joy in. At the times when I find myself in a leadership position, I always strive to lead by example and place the needs of my team and its goals before my own.</p>
                 </div>
-                <div className="img_container">
-                    <img className="profile_image" alt="picture_of_me" src={require('./profilbild.jpg')}></img>
+                <div class="img_container">
+                    <img class="profile_image animated rollIn slower" alt="picture_of_me" src={require('./profilbild.jpg')}></img>
                 </div>
             </div>
         </div>

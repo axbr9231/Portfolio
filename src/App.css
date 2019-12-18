@@ -52,6 +52,7 @@ footer {
   height: 500px;
   border-radius: 2%;
   color: white;
+  padding-top: 10px;
 }
 
 .current_card {

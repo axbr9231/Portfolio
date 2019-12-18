@@ -15,7 +15,7 @@ export default class App extends React.Component {
   renderItems() {
     if (this.state.current_card === 'about') {
       return (
-        <div>
+        <div class="animated zoomInRight slow">
           <About />
         </div>
       )
