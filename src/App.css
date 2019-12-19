@@ -1,4 +1,4 @@
-button {
+#navButton {
   background: none;
   border: 2px solid white;
   color: white;
@@ -9,6 +9,16 @@ button {
 
 button:hover {
   opacity: .5;
+}
+
+#tab {
+  max-width: 150px;
+  background: none;
+  border: none;
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: 'Exo 2', sans-serif;
+  color: aliceblue;
 }
 
 body {

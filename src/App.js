@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import About from './About.js';
 import Projects from './Projects.js'
+import Tabs from './Tabs.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -27,6 +28,10 @@ export default class App extends React.Component {
           Axel Brostedt | Software Engineer
           </h1>
           <img src={require('./moose.png')} alt="Icon made by Freepik" class="moosePic animated fadeInUp slower"></img>
+          <Tabs 
+          handleProjects={this.handleProjectsClick}
+          handleAbout={this.handleAboutClick}
+          />
         </div>
       )
     } else if (this.state.current_card === 'projects') {
@@ -57,11 +62,11 @@ export default class App extends React.Component {
         <header>
           <nav class="navbar navbar-dark navbar-inverse justify-content-end">
             <div class="nav-header justify-content-end">
-            <button type="button" id="about" onClick={() => {this.handleAboutClick()}}>About</button>
-            <button type="button" onClick={() => {
+            <button type="button" id="navButton" onClick={() => {this.handleAboutClick()}}>About</button>
+            <button type="button" id="navButton" onClick={() => {
               this.handleProjectsClick()
             }}>Projects</button>
-            <button type="button">Contact</button>
+            <button type="button" id="navButton">Contact</button>
             </div>
           </nav>
         </header>
