@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import About from './About.js';
-
+import Projects from './Projects.js'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -11,11 +11,12 @@ export default class App extends React.Component {
     }
     this.renderItems = this.renderItems.bind(this);
     this.handleAboutClick = this.handleAboutClick.bind(this);
+    this.handleProjectsClick = this.handleProjectsClick.bind(this);
   }
   renderItems() {
     if (this.state.current_card === 'about') {
       return (
-        <div class="animated zoomInRight slow">
+        <div class="animated fadeIn slow">
           <About />
         </div>
       )
@@ -28,6 +29,12 @@ export default class App extends React.Component {
           <img src={require('./moose.png')} alt="Icon made by Freepik" class="moosePic animated fadeInUp slower"></img>
         </div>
       )
+    } else if (this.state.current_card === 'projects') {
+      return (
+        <div id="projects_tray">
+          <Projects />
+        </div>
+      )
     }
   }
 
@@ -35,6 +42,12 @@ export default class App extends React.Component {
     this.setState({
       current_card: 'about'
     })
+  }
+
+  handleProjectsClick() {
+    this.setState({
+      current_card: 'projects'
+    });
   }
 
   render() {
@@ -45,7 +58,9 @@ export default class App extends React.Component {
           <nav class="navbar navbar-dark navbar-inverse justify-content-end">
             <div class="nav-header justify-content-end">
             <button type="button" id="about" onClick={() => {this.handleAboutClick()}}>About</button>
-            <button type="button">Projects</button>
+            <button type="button" onClick={() => {
+              this.handleProjectsClick()
+            }}>Projects</button>
             <button type="button">Contact</button>
             </div>
           </nav>

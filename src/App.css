@@ -81,6 +81,14 @@ footer {
   margin-bottom: 30px;
 }
 
-.moosePic {
-  /* padding-bottom: 80px; */
+#projects_container {
+  background-color: greenyellow;
+  
 }
+
+.githubLogo {
+  height: 20px;
+  width: 20px;
+}
+
+
