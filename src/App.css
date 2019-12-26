@@ -122,6 +122,36 @@ footer {
   
 }
 
+.card {
+  perspective: 1000px;
+}
+
+.card:hover .card_inner {
+  transform: rotateY(180deg);
+}
+
+.card_front, .card_back {
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: DarkSlateGray;
+  min-height: 344.84px;
+  min-width: 250px;
+}
+
+.card_back {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.card_inner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  background-color: DarkSlateGray;
+}
+
 .outer_projects_container {
   height: 400px;
   width: 1180px;
