@@ -26,8 +26,12 @@ const Projects = () => {
                                         <p>React</p>
                                         <p>Bootstrap</p>
                                     </div>
-                                    <p id="cocktail-text" class="card-text"><small>Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
-                                        CocktailMaker</a> <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/cocktail-maker"> Code</a></small></p>
+                                    <p id="cocktail-text" class="card-text">Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
+                                        CocktailMaker</a>
+                                    </p>
+                                    <p>
+                                    <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/cocktail-maker"> Code</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -78,8 +82,12 @@ const Projects = () => {
                                     <p>PostgreSQL</p>
                                     <p>BootStrap</p>
                                     </div>
-                                    <p class="card-text"><small>Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
-                                        SwaggyThreadz</a> <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/GHRBLD05/SwaggyThreadz"> Code</a></small></p>
+                                    <p class="card-text">Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
+                                        SwaggyThreadz</a>
+                                    </p>
+                                    <p>
+                                    <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/GHRBLD05/SwaggyThreadz"> Code</a>
+                                    </p>
                                 </div>  
                             </div>
                         </div>
