@@ -116,6 +116,9 @@ footer {
 .githubLogo {
   height: 20px;
   width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
 #projects_container {
@@ -133,7 +136,7 @@ footer {
 .card_front, .card_back {
   position: absolute;
   backface-visibility: hidden;
-  background-color: DarkSlateGray;
+  background-image: url(card_background.png);
   min-height: 344.84px;
   min-width: 250px;
 }

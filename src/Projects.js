@@ -49,8 +49,10 @@ const Projects = () => {
                                         <p>React</p>
                                         <p>Bootstrap</p>
                                     </div>
-                                    <p id="mineSweeper-text" class="card-text"><small>Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
-                                        MineSweeper</a> <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/Axels-MineSweeper"> Code</a></small></p>
+                                    <p id="mineSweeper-text" class="card-text">Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
+                                        MineSweeper</a>
+                                    </p>
+                                    <p><img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/Axels-MineSweeper"> Code</a></p>
                                 </div>
                             </div>
                         </p>
