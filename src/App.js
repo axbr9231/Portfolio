@@ -74,12 +74,19 @@ export default class App extends React.Component {
           <div class="current_card">
           {items}
           </div>
-
-        <footer>
+          <div id="space_between"></div>
+          <div id="main_page_about">
+          <About class='About_Section'/>
+          </div>
+          <div id="space_between"></div>
+          <div id="main_page_about">
+          <Projects />
+          </div>
+        {/* <footer>
           <div class="container">
             <p>Hello</p>
           </div>
-        </footer>
+        </footer> */}
         
       </div>
     )

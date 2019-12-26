@@ -1,3 +1,19 @@
+#App {
+  scroll-snap-type: mandatory;
+}
+
+.About_Section {
+  scroll-snap-align: start;
+}
+
+#main_page_about {
+  text-align: center;
+}
+
+#space_between {
+  height: 350px;
+}
+
 #navButton {
   background: none;
   border: 2px solid white;
@@ -48,7 +64,7 @@ footer {
 #about_card {
   border-radius: 2%;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 600px;
+  width: 1000px;
   height: 700px;
   display: inline-block;
   text-align: center;
@@ -59,10 +75,12 @@ footer {
   display: inline-block;
   position: relative;
   width: 90%;
-  height: 500px;
+  height: 340px;
   border-radius: 2%;
   color: white;
+  font-family: 'Exo 2', sans-serif;
   padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .current_card {
@@ -72,10 +90,10 @@ footer {
 }
 
 .img_container {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .profile_image {
@@ -91,14 +109,25 @@ footer {
   margin-bottom: 30px;
 }
 
-#projects_container {
-  background-color: greenyellow;
-  
+.card-body {
+  font-family: 'Exo 2', sans-serif;
 }
 
 .githubLogo {
   height: 20px;
   width: 20px;
+}
+
+#projects_container {
+  
+}
+
+.outer_projects_container {
+  height: 400px;
+  width: 1180px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2%;
 }
 
 
