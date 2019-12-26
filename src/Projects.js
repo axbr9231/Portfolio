@@ -6,35 +6,55 @@ const Projects = () => {
 
 
     return (
-        <div class="outer_projects_container">
-            <div class="container" id="projects_container">
-                <div class="row mt-4 justify-content-between">
+        <p class="outer_projects_container">
+            <p class="container" id="projects_container">
+                <p class="row mt-4 justify-content-between">
                     <div>
                         <div class="card" style={cardStyle.card}>
-                            <img src={require('./appPic.png')} alt="app_picture" style={imgStyle}></img>
-                            <div class="card-body" style={cardStyle.body}>
-                                <h5>Cocktail Maker</h5>
-                                <p class="card-text">
-                                    An application in which you can search for recipes for popular cocktails while listening to some smooth music. Built in React and Bootstrap.
-                                </p>
-                                <p class="card-text"><small>Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
-                                    CocktailMaker</a> <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/cocktail-maker"> Code</a></small></p>
+                            <div class="card_inner">
+                                <div class="card_front">
+                                    <img src={require('./appPic.png')} alt="app_picture" style={imgStyle}></img>
+                                    <div class="card-body" style={cardStyle.body}>
+                                        <h5>Cocktail Maker</h5>
+                                        <p class="card-text">
+                                            An application in which you can search for recipes for popular cocktails while listening to some smooth music. Built in React and Bootstrap.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card_back">
+                                    <div class="card-body mt-5 mb-5">
+                                        <p>React</p>
+                                        <p>Bootstrap</p>
+                                    </div>
+                                    <p id="cocktail-text" class="card-text"><small>Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
+                                        CocktailMaker</a> <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/cocktail-maker"> Code</a></small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="card" style={cardStyle.card}>
-                            <img src={require('./Minesweeper.png')} alt="app_picture" style={imgStyle}></img>
-                            <div class="card-body" style={cardStyle.body}>
-                                <h5>Mine Sweeper</h5>
-                                <p class="card-text">
-                                    A reacreation of Mine Sweeper built in React and Bootstrap.
-                                </p>
-                                <p class="card-text"><small>Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
-                                    MineSweeper</a> <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/Axels-MineSweeper"> Code</a></small></p>
+                    <p>
+                        <p class="card" style={cardStyle.card}>
+                            <div class="card_inner">
+                                <div class="card_front">
+                                    <img src={require('./Minesweeper.png')} alt="app_picture" style={imgStyle}></img>
+                                    <div class="card-body" style={cardStyle.body}>
+                                        <h5>Mine Sweeper</h5>
+                                        <p class="card-text">
+                                            A reacreation of Mine Sweeper built in React and Bootstrap.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card_back">
+                                    <div class="card_body mt-5 mb-5">
+                                        <p>React</p>
+                                        <p>Bootstrap</p>
+                                    </div>
+                                    <p id="mineSweeper-text" class="card-text"><small>Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
+                                        MineSweeper</a> <img src={require('./GitHub-Mark-32px.png')} alt="github_icon" className="githubLogo"></img> <a href="https://github.com/axbr9231/Axels-MineSweeper"> Code</a></small></p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </p>
+                    </p>
                     <div>
                         <div class="card" style={cardStyle.card}>
                             <div class="card_inner">
@@ -62,9 +82,9 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </p>
+            </p>
+        </p>
     )
 }
 export default Projects;
