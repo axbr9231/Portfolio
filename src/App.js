@@ -89,13 +89,13 @@ export default class App extends React.Component {
     return (
       <div id="App">
         <header>
-          <nav class="navbar navbar-dark navbar-inverse justify-content-end">
+          <nav class="navbar navbar-dark navbar-inverse justify-content-end fixed-top">
             <div class="nav-header justify-content-end">
             <button type="button" id="navButton" onClick={() => {this.handleAboutClick()}}>About</button>
             <button type="button" id="navButton" onClick={() => {
               this.handleProjectsClick()
             }}>Projects</button>
-            <button type="button" id="navButton">Contact</button>
+            <button type="button" id="navButton" onClick={() => {this.handleContactClick()}}>Contact</button>
             </div>
           </nav>
         </header>
