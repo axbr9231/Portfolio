@@ -13,8 +13,14 @@ export default class App extends React.Component {
     this.renderItems = this.renderItems.bind(this);
     this.handleAboutClick = this.handleAboutClick.bind(this);
     this.handleProjectsClick = this.handleProjectsClick.bind(this);
+    this.handleContactClick = this.handleContactClick.bind(this);
+    this.projectsRef = React.createRef();
+    this.aboutRef = React.createRef();
+    this.contactRef = React.createRef();
   }
+ 
   renderItems() {
+
     if (this.state.current_card === 'about') {
       return (
         <div class="animated fadeIn slow">
@@ -31,6 +37,8 @@ export default class App extends React.Component {
           <Tabs 
           handleProjects={this.handleProjectsClick}
           handleAbout={this.handleAboutClick}
+          projectRef={this.projectsRef}
+          contactClick={this.handleContactClick}
           />
         </div>
       )
@@ -44,19 +52,40 @@ export default class App extends React.Component {
   }
 
   handleAboutClick() {
-    this.setState({
-      current_card: 'about'
-    })
+
+    if (this.aboutRef !== null) {
+
+      this.aboutRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      })
+    }
   }
 
   handleProjectsClick() {
-    this.setState({
-      current_card: 'projects'
-    });
+  
+    if (this.projectsRef !== null) {
+
+      this.projectsRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      })
+    }
+  }
+
+  handleContactClick() {
+    if (this.contactRef !== null) {
+
+      this.contactRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
   }
 
   render() {
     const items = this.renderItems();
+    
     return (
       <div id="App">
         <header>
@@ -75,20 +104,16 @@ export default class App extends React.Component {
           {items}
           </div>
           <div id="space_between"></div>
-          <div id="main_page_about">
+          <div id="main_page_about" ref={this.aboutRef}>
             <About class='About_Section'/>
           </div>
           <div id="space_between"></div>
-          <div id="main_page_about">
+          <div id="main_page_projects" ref={this.projectsRef}>
             <Projects />
           </div>
-        {/* <footer>
-          <div class="container">
-            <p>Hello</p>
-          </div>
-        </footer> */}
+        
         <div id="space_between"></div>
-        <div id="contact_section">
+        <div id="contact_section" ref={this.contactRef}>
           <div class="contact_container pt-5">
             <div class="mb-4"><img src={require('./icons8-location-64.png')} alt="Icon by Icons8"></img> Boulder, CO, US</div>
             <div class="mb-4"><img src={require('./icons8-email-64.png')} alt="Icon by Icons8"></img> Email: axelbrostedt@gmail.com</div>
