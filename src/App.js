@@ -76,17 +76,26 @@ export default class App extends React.Component {
           </div>
           <div id="space_between"></div>
           <div id="main_page_about">
-          <About class='About_Section'/>
+            <About class='About_Section'/>
           </div>
           <div id="space_between"></div>
           <div id="main_page_about">
-          <Projects />
+            <Projects />
           </div>
         {/* <footer>
           <div class="container">
             <p>Hello</p>
           </div>
         </footer> */}
+        <div id="space_between"></div>
+        <div id="contact_section">
+          <div class="contact_container pt-5">
+            <div class="mb-4"><img src={require('./icons8-location-64.png')} alt="Icon by Icons8"></img> Boulder, CO, US</div>
+            <div class="mb-4"><img src={require('./icons8-email-64.png')} alt="Icon by Icons8"></img> Email: axelbrostedt@gmail.com</div>
+            <div class="mb-4"><img src={require('./icons8-github-64.png')} alt="Icon by Icons8"></img> Github: <a href="https://github.com/axbr9231">axbr9231</a></div>
+            <div><img src={require('./icons8-linkedin-64.png')} alt="Icon by Icons8"></img> LinkedIn: <a href="https://www.linkedin.com/in/axel-brostedt/">axel-brostedt</a></div>
+          </div>
+        </div>
         
       </div>
     )

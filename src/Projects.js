@@ -75,12 +75,12 @@ const Projects = () => {
                                 </div>
                                 <div class="card_back">
                                     <div class="card-body">
-                                    <p>React</p>
-                                    <p>Redux</p>
-                                    <p>Express</p>
-                                    <p>Node</p>
-                                    <p>PostgreSQL</p>
-                                    <p>BootStrap</p>
+                                        <p>React</p>
+                                        <p>Redux</p>
+                                        <p>Express</p>
+                                        <p>Node</p>
+                                        <p>PostgreSQL</p>
+                                        <p>BootStrap</p>
                                     </div>
                                     <p class="card-text">Demo: <a href="http://axels-cocktail-maker.surge.sh/?fbclid=IwAR1uHTIeDGn7qy_RaUqKGeG5A-KxAJDK3FyTfC3PU9lWKiaQ3idvMiPH0pk">
                                         SwaggyThreadz</a>
