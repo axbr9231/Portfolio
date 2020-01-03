@@ -63,16 +63,20 @@ body {
   border-radius: 2%;
   background-color: rgba(0, 0, 0, 0.8);
   width: 1150px;
-  height: 700px;
+  height: 600px;
   display: inline-block;
   text-align: center;
+  font-family: 'Exo 2', sans-serif;
 }
 
 #skill_list {
   background-color: none;
   display: inline-block;
   position: relative;
-  color: white
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+  margin-top: 3%;
 }
 
 #about_card {
@@ -201,4 +205,19 @@ body {
   margin-left: 40%;
 }
 
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  border-bottom: 1px solid white;
+  padding-bottom: 7px;
+}
+
+li {
+  background: none;
+  border-top-color: 1px solid white;
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: 1px solid white;
+}
 
