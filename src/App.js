@@ -15,9 +15,11 @@ export default class App extends React.Component {
     this.handleAboutClick = this.handleAboutClick.bind(this);
     this.handleProjectsClick = this.handleProjectsClick.bind(this);
     this.handleContactClick = this.handleContactClick.bind(this);
+    this.handleSkillsClick = this.handleSkillsClick.bind(this);
     this.projectsRef = React.createRef();
     this.aboutRef = React.createRef();
     this.contactRef = React.createRef();
+    this.skillsRef = React.createRef();
   }
  
   renderItems() {
@@ -40,6 +42,7 @@ export default class App extends React.Component {
           handleAbout={this.handleAboutClick}
           projectRef={this.projectsRef}
           contactClick={this.handleContactClick}
+          skillsClick={this.handleSkillsClick}
           />
         </div>
       )
@@ -84,6 +87,16 @@ export default class App extends React.Component {
     }
   }
 
+  handleSkillsClick() {
+    if (this.skillsRef !== null) {
+
+      this.skillsRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      })
+    }
+  }
+
   render() {
     const items = this.renderItems();
     
@@ -96,6 +109,7 @@ export default class App extends React.Component {
             <button type="button" id="navButton" onClick={() => {
               this.handleProjectsClick()
             }}>Projects</button>
+            <button type="button" id="navButton" onClick={() => {this.handleSkillsClick()}}>Skills</button>
             <button type="button" id="navButton" onClick={() => {this.handleContactClick()}}>Contact</button>
             </div>
           </nav>
@@ -113,7 +127,7 @@ export default class App extends React.Component {
             <Projects />
           </div>
           <div id="space_between"></div>
-          <div id="main_page_skills">
+          <div id="main_page_skills" ref={this.skillsRef}>
             <Skills />
           </div>
         
