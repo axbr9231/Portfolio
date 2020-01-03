@@ -3,6 +3,7 @@ import './App.css';
 import About from './About.js';
 import Projects from './Projects.js'
 import Tabs from './Tabs.js';
+import Skills from './Skills.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -110,6 +111,10 @@ export default class App extends React.Component {
           <div id="space_between"></div>
           <div id="main_page_projects" ref={this.projectsRef}>
             <Projects />
+          </div>
+          <div id="space_between"></div>
+          <div id="main_page_skills">
+            <Skills />
           </div>
         
         <div id="space_between"></div>

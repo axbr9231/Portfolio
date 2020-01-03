@@ -12,7 +12,9 @@
 #main_page_projects {
   text-align: center;
 }
-
+#main_page_skils {
+  text-align: center;
+}
 
 #space_between {
   height: 350px;
@@ -57,12 +59,20 @@ body {
   background-color: black;
 }
 
-footer {
-  position: fixed;
-  background-color: black;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
+#skills_container {
+  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 1150px;
+  height: 700px;
+  display: inline-block;
+  text-align: center;
+}
+
+#skill_list {
+  background-color: none;
+  display: inline-block;
+  position: relative;
+  color: white
 }
 
 #about_card {
